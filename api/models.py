@@ -3,7 +3,7 @@ from django.utils import timezone
 # Create your models here.
 
 class Post(models.Model):
-    POST_CHOICE = ((Trua, "Boast"), (False, "Roast"))
+    POST_CHOICE = ((True, "Boast"), (False, "Roast"))
 
     content = models.CharField(max_length=250)
     up_votes = models.IntegerField(default=0)
